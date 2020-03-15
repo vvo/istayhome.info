@@ -6,7 +6,7 @@ import Markdown from "markdown-to-jsx";
 import escapeStringRegexp from "escape-string-regexp";
 import PropTypes from "prop-types";
 
-const Home = ({ languages, translation, title, placeholder, language }) => {
+const Home = ({ languages, translation, title, language }) => {
   const router = useRouter();
   const [currentLanguage, setLanguage] = useState({
     value: language,
@@ -57,7 +57,6 @@ const Home = ({ languages, translation, title, placeholder, language }) => {
         instanceId={1}
         value={currentLanguage}
         onChange={handleChange}
-        placeholder={`🌐 ${placeholder}`}
         options={options}
         className="flex-1 max-w-xs"
       />
@@ -101,26 +100,20 @@ export async function getStaticProps({ params }) {
     key: process.env.GOOGLE_CLOUD_API_KEY
   });
   const language = params.language;
-
+  const originalTitle = "Social Distancing: This is Not a Snow Day";
   const originalArticleFilePath = resolve("./article.md");
   const translationFilePath = resolve(`./translations/${language}.md`);
 
   const [title] =
-    cache.get(`title-${language}`) ||
-    (await translate.translate("Social Distancing: This is Not a Snow Day", {
-      from: "en",
-      to: language
-    }));
+    language === "en"
+      ? [originalTitle]
+      : cache.get(`title-${language}`) ||
+        (await translate.translate(originalTitle, {
+          from: "en",
+          to: language
+        }));
 
   cache.set(`title-${language}`, [title]);
-
-  const [placeholder] =
-    cache.get(`placeholder-${language}`) ||
-    (await translate.translate("Change language", {
-      from: "en",
-      to: language
-    }));
-  cache.set(`placeholder-${language}`, [placeholder]);
 
   const [languages] =
     cache.get("languages") || (await translate.getLanguages());
@@ -211,7 +204,6 @@ export async function getStaticProps({ params }) {
       languages,
       translation,
       title,
-      placeholder,
       language
     }
   };
@@ -229,8 +221,17 @@ async function getOrComputeAndCacheArticleTranslation({
     return readFile(translationFilePath, "utf8");
   }
 
+  const originalArticleContent = await readFile(
+    originalArticleFilePath,
+    "utf8"
+  );
+
+  if (language === "en") {
+    return originalArticleContent;
+  }
+
   const [articleTranslation] = await translate.translate(
-    await readFile(originalArticleFilePath, "utf8"),
+    originalArticleContent,
     {
       from: "en",
       to: language
@@ -255,7 +256,11 @@ async function fileExists(filePath) {
 
 export async function getStaticPaths() {
   return {
-    paths: [{ params: { language: "fr" } }, { params: { language: "de" } }],
+    paths: [
+      { params: { language: "fr" } },
+      { params: { language: "de" } },
+      { params: { language: "en" } }
+    ],
     fallback: false
   };
 }
