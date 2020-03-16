@@ -65,9 +65,9 @@ const Home = ({ languages, translation, title, language }) => {
       <Markdown
         options={{
           overrides: {
-            h1: { props: { className: "text-5xl mb-10" } },
-            h2: { props: { className: "text-3xl my-6" } },
-            p: { props: { className: "text-lg my-5" } },
+            h1: { props: { className: "font-serif text-5xl mb-10" } },
+            h2: { props: { className: "font-serif text-3xl my-6" } },
+            p: { props: { className: "font-sans text-lg my-5" } },
             a: {
               props: {
                 className:
