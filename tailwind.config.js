@@ -5,10 +5,10 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ["Roboto", ...defaultTheme.fontFamily.sans],
-        serif: ["Playfair Display", ...defaultTheme.fontFamily.serif]
-      }
-    }
+        serif: ["Playfair Display", ...defaultTheme.fontFamily.serif],
+      },
+    },
   },
   variants: {},
-  plugins: []
+  plugins: [],
 };

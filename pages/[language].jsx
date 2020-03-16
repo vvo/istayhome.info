@@ -2,20 +2,42 @@ import React, { useState } from "react";
 import Head from "next/head";
 import Select from "react-select";
 import { useRouter } from "next/router";
-import Markdown from "markdown-to-jsx";
-import escapeStringRegexp from "escape-string-regexp";
 import PropTypes from "prop-types";
+import Markdown from "markdown-to-jsx";
+import {
+  EmailShareButton,
+  FacebookShareButton,
+  LinkedinShareButton,
+  TwitterShareButton,
+  RedditShareButton,
+  TelegramShareButton,
+  VKShareButton,
+  WhatsappShareButton,
+  EmailIcon,
+  FacebookIcon,
+  LinkedinIcon,
+  RedditIcon,
+  TelegramIcon,
+  TwitterIcon,
+  VKIcon,
+  WhatsappIcon,
+} from "react-share";
 
-const Home = ({ languages, translation, title, language }) => {
+export default function Home({
+  languages,
+  markdownTranslation,
+  title,
+  language,
+}) {
   const router = useRouter();
   const [currentLanguage, setLanguage] = useState({
     value: language,
-    label: languages.find(({ code }) => code === language).name
+    label: languages.find(({ code }) => code === language).name,
   });
 
   const options = languages.map(({ code: value, name: label }) => ({
     value,
-    label
+    label,
   }));
 
   const handleChange = (selectedLanguage) => {
@@ -23,8 +45,8 @@ const Home = ({ languages, translation, title, language }) => {
     router.push(`/${selectedLanguage.value}`);
   };
 
-  const description = translation.split("\n")[6];
-  const url = `https://istayhome.info/${language}`;
+  const description = markdownTranslation.split("\n")[6];
+  const url = `https://istayhome-info.now.sh/${language}`;
 
   return (
     <>
@@ -41,7 +63,7 @@ const Home = ({ languages, translation, title, language }) => {
         />
         <meta
           property="og:image"
-          content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png"
+          content="https://istayhome-info.now.sh/social.png"
         />
 
         <meta property="twitter:card" content="summary_large_image" />
@@ -50,7 +72,7 @@ const Home = ({ languages, translation, title, language }) => {
         <meta property="twitter:description" content={description} />
         <meta
           property="twitter:image"
-          content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png"
+          content="https://istayhome-info.now.sh/social.png"
         />
       </Head>
       <Select
@@ -61,7 +83,7 @@ const Home = ({ languages, translation, title, language }) => {
         className="flex-1 max-w-xs"
       />
       <Image />
-      <Sharing url={url} title={title} summary={description} />
+      <Sharing url={url} />
       <Markdown
         options={{
           overrides: {
@@ -71,19 +93,17 @@ const Home = ({ languages, translation, title, language }) => {
             a: {
               props: {
                 className:
-                  "text-indigo-600 underline transition-colors duration-500 ease-out hover:text-blue-700 hover:bg-yellow-200"
-              }
-            }
-          }
+                  "text-indigo-600 underline transition-colors duration-500 ease-out hover:text-blue-700 hover:bg-yellow-200",
+              },
+            },
+          },
         }}
       >
-        {translation}
+        {markdownTranslation}
       </Markdown>
     </>
   );
-};
-
-export default Home;
+}
 
 export async function getStaticProps({ params }) {
   const Cache = require("lru-cache-fs");
@@ -91,17 +111,19 @@ export async function getStaticProps({ params }) {
 
   const cache = new Cache({
     max: 1000,
-    cacheName: "istayhome.info" // filename ref to be used
+    cacheName: "istayhome.info", // filename ref to be used
   });
 
   const { Translate } = require("@google-cloud/translate").v2;
   const translate = new Translate({
-    projectId: "istayhome"
+    projectId: "istayhome",
   });
   const language = params.language;
   const originalTitle = "Social Distancing: This is Not a Snow Day";
-  const originalArticleFilePath = resolve("./article.md");
-  const translationFilePath = resolve(`./translations/${language}.md`);
+  const originalMarkdownArticleFilePath = resolve("./article.md");
+  const markdownTranslationCacheFilepath = resolve(
+    `./translations/${language}.md`,
+  );
 
   const [title] =
     language === "en"
@@ -109,7 +131,7 @@ export async function getStaticProps({ params }) {
       : cache.get(`title-${language}`) ||
         (await translate.translate(originalTitle, {
           from: "en",
-          to: language
+          to: language,
         }));
 
   cache.set(`title-${language}`, [title]);
@@ -119,129 +141,76 @@ export async function getStaticProps({ params }) {
   cache.set("languages", [languages]);
   cache.fsDump();
 
-  const articleTranslation = await getOrComputeAndCacheArticleTranslation({
+  const markdownTranslation = await getOrComputeAndCacheMarkdownTranslation({
     language,
-    translationFilePath,
-    originalArticleFilePath,
-    translate
+    markdownTranslationCacheFilepath,
+    originalMarkdownArticleFilePath,
+    translate,
   });
 
-  const links = [
-    "https://www.ariadnelabs.org/resources/articles/news/social-distancing-this-is-not-a-snow-day",
-    translateUrl({
-      link:
-        "https://www.nytimes.com/interactive/2020/03/13/opinion/coronavirus-trump-response.html?action=click&module=Opinion&pgtype=Homepage--",
-      language
-    }),
-    translateUrl({
-      link:
-        "https://bmcpublichealth.biomedcentral.com/articles/10.1186/s12889-018-5446-1",
-      language
-    }),
-    translateUrl({
-      link: "https://www.house.gov/representatives/find-your-representative",
-      language
-    }),
-    translateUrl({
-      link: "https://www.cdc.gov/coronavirus/2019-ncov/about/coping.html",
-      language
-    }),
-    translateUrl({
-      link: "https://www.verywellmind.com/managing-coronavirus-anxiety-4798909",
-      language
-    }),
-    translateUrl({
-      link:
-        "https://www.cdc.gov/coronavirus/2019-ncov/downloads/Phone-Numbers_State-and-Local-Health-Departments.pdf",
-      language
-    }),
-    translateUrl({
-      link:
-        "https://www.theverge.com/2020/3/11/21174880/coronavirus-testing-drive-thru-colorado-connecticut-washington",
-      language
-    }),
-    translateUrl({
-      link: "https://www.ncbi.nlm.nih.gov/pubmed/19400970/",
-      language
-    }),
-    translateUrl(
-      {
-        link:
-          "https://www.ariadnelabs.org/wp-content/uploads/sites/2/2020/03/Social-Distancing-This-is-Not-a-Snow-Day-Bitton.pdf"
-      },
-      language
-    )
-  ];
-  let translation = articleTranslation
-    .replace(new RegExp(escapeStringRegexp("[ "), "g"), "[")
-    .replace(new RegExp(escapeStringRegexp("] ("), "g"), "](")
-    .replace(new RegExp(escapeStringRegexp("** "), "g"), "**")
-    .replace(new RegExp(escapeStringRegexp("__ "), "g"), "__")
-    .replace(new RegExp(escapeStringRegexp(" __"), "g"), "__")
-    // .replace(new RegExp(escapeStringRegexp("_ "), "g"), "_")
-    // .replace(new RegExp(escapeStringRegexp(" _"), "g"), "_")
-    .replace(new RegExp(escapeStringRegexp(" **"), "g"), "**")
-    .replace(new RegExp(escapeStringRegexp("! ["), "g"), "![")
-    .replace(new RegExp(escapeStringRegexp("! ["), "g"), "![")
-    .replace(/__link(.*)?__/g, (match, p1) => {
-      return links[parseInt(p1, 10)];
-    })
-    .replace(
-      "__###__",
-      `<center>![Source: [https://www.vox.com/science-and-health/2020/3/6/21161234/coronavirus-covid-19-science-outbreak-ends-endemic-vaccine](https://www.vox.com/science-and-health/2020/3/6/21161234/coronavirus-covid-19-science-outbreak-ends-endemic-vaccine)](/graph.jpeg)\n\n_Source: [https://www.vox.com/science-and-health/2020/3/6/21161234/coronavirus-covid-19-science-outbreak-ends-endemic-vaccine](${translateUrl(
-        {
-          link:
-            "https://www.vox.com/science-and-health/2020/3/6/21161234/coronavirus-covid-19-science-outbreak-ends-endemic-vaccine",
-          language
-        }
-      )})_</center>`
-    );
-  translation += `
----
-
-<p class="text-right">Want to update a translation? Read and contribute to the [source code](https://github.com/vvo/istayhome.info). Illustration from [opendoodles](https://generator.opendoodles.com/)</p>`;
   return {
     props: {
       languages,
-      translation,
+      markdownTranslation,
       title,
-      language
-    }
+      language,
+    },
   };
 }
 
-async function getOrComputeAndCacheArticleTranslation({
+async function getOrComputeAndCacheMarkdownTranslation({
   language,
-  translationFilePath,
+  markdownTranslationCacheFilepath,
   translate,
-  originalArticleFilePath
+  originalMarkdownArticleFilePath,
 }) {
   const { readFile, writeFile } = require("fs").promises;
+  const { promisify } = require("util");
+  const marked = promisify(require("marked"));
+  const TurndownService = require("turndown");
+  const turndownService = new TurndownService({
+    headingStyle: "atx",
+    hr: "---",
+  });
+  turndownService.keep(["center"]);
 
-  if (await fileExists(translationFilePath)) {
-    return readFile(translationFilePath, "utf8");
+  // we convert to html because Google Translate really works perfectly only for HTML as for structured documents
+  const htmlTranslation =
+    (await getHtmlTranslationFromCache(markdownTranslationCacheFilepath)) ||
+    (await translateHtml({
+      html: await marked(
+        await readFile(originalMarkdownArticleFilePath, "utf-8"),
+      ),
+      language,
+      translate,
+    }));
+
+  const markdownTranslation = turndownService.turndown(htmlTranslation);
+  await writeFile(markdownTranslationCacheFilepath, markdownTranslation);
+
+  return markdownTranslation;
+}
+
+async function translateHtml({ html, language, translate }) {
+  const [htmlTranslation] = await translate.translate(html, {
+    from: "en",
+    to: language,
+  });
+  return htmlTranslation;
+}
+
+async function getHtmlTranslationFromCache(markdownTranslationCacheFilepath) {
+  const { promisify } = require("util");
+  const { readFile } = require("fs").promises;
+  const marked = promisify(require("marked"));
+
+  if (await fileExists(markdownTranslationCacheFilepath)) {
+    return await marked(
+      await readFile(markdownTranslationCacheFilepath, "utf-8"),
+    );
   }
 
-  const originalArticleContent = await readFile(
-    originalArticleFilePath,
-    "utf8"
-  );
-
-  if (language === "en") {
-    return originalArticleContent;
-  }
-
-  const [articleTranslation] = await translate.translate(
-    originalArticleContent,
-    {
-      from: "en",
-      to: language
-    }
-  );
-
-  await writeFile(translationFilePath, articleTranslation);
-
-  return articleTranslation;
+  return null;
 }
 
 async function fileExists(filePath) {
@@ -260,29 +229,23 @@ export async function getStaticPaths() {
     paths: [
       { params: { language: "fr" } },
       { params: { language: "de" } },
-      { params: { language: "en" } }
+      { params: { language: "en" } },
     ],
-    fallback: false
+    fallback: false,
   };
-}
-
-function translateUrl({ link, language }) {
-  return `https://translate.google.com/translate?sl=en&tl=${language}&u=${encodeURIComponent(
-    link
-  )}`;
 }
 
 Home.propTypes = {
   languages: PropTypes.arrayOf(
     PropTypes.shape({
       code: PropTypes.string,
-      name: PropTypes.string
-    })
+      name: PropTypes.string,
+    }),
   ),
   language: PropTypes.string,
-  translation: PropTypes.string,
+  markdownTranslation: PropTypes.string,
   placeholder: PropTypes.string,
-  title: PropTypes.string
+  title: PropTypes.string,
 };
 
 function Image() {
@@ -305,163 +268,31 @@ function Image() {
 
 function Sharing({ url, title, summary }) {
   return (
-    <div>
-      {/* Sharingbutton Facebook */}
-      <a
-        className="resp-sharing-button__link"
-        href={`https://facebook.com/sharer/sharer.php?u=${encodeURIComponent(
-          url
-        )}`}
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Facebook"
-      >
-        <div className="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--medium">
-          <div
-            aria-hidden="true"
-            className="resp-sharing-button__icon resp-sharing-button__icon--solid"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-              <path d="M18.77 7.46H14.5v-1.9c0-.9.6-1.1 1-1.1h3V.5h-4.33C10.24.5 9.5 3.44 9.5 5.32v2.15h-3v4h3v12h5v-12h3.85l.42-4z" />
-            </svg>
-          </div>
-          Facebook
-        </div>
-      </a>
-      {/* Sharingbutton Twitter */}
-      <a
-        className="resp-sharing-button__link"
-        href={`https://twitter.com/intent/tweet/?text=${encodeURIComponent(
-          title
-        )}&url=${encodeURIComponent(url)}`}
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Twitter"
-      >
-        <div className="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--medium">
-          <div
-            aria-hidden="true"
-            className="resp-sharing-button__icon resp-sharing-button__icon--solid"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-              <path d="M23.44 4.83c-.8.37-1.5.38-2.22.02.93-.56.98-.96 1.32-2.02-.88.52-1.86.9-2.9 1.1-.82-.88-2-1.43-3.3-1.43-2.5 0-4.55 2.04-4.55 4.54 0 .36.03.7.1 1.04-3.77-.2-7.12-2-9.36-4.75-.4.67-.6 1.45-.6 2.3 0 1.56.8 2.95 2 3.77-.74-.03-1.44-.23-2.05-.57v.06c0 2.2 1.56 4.03 3.64 4.44-.67.2-1.37.2-2.06.08.58 1.8 2.26 3.12 4.25 3.16C5.78 18.1 3.37 18.74 1 18.46c2 1.3 4.4 2.04 6.97 2.04 8.35 0 12.92-6.92 12.92-12.93 0-.2 0-.4-.02-.6.9-.63 1.96-1.22 2.56-2.14z" />
-            </svg>
-          </div>
-          Twitter
-        </div>
-      </a>
-      {/* Sharingbutton E-Mail */}
-      <a
-        className="resp-sharing-button__link"
-        href={`mailto:?subject=${encodeURIComponent(
-          title
-        )}&body=${encodeURIComponent(url)}`}
-        target="_self"
-        rel="noopener noreferrer"
-        aria-label="E-Mail"
-      >
-        <div className="resp-sharing-button resp-sharing-button--email resp-sharing-button--medium">
-          <div
-            aria-hidden="true"
-            className="resp-sharing-button__icon resp-sharing-button__icon--solid"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-              <path d="M22 4H2C.9 4 0 4.9 0 6v12c0 1.1.9 2 2 2h20c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zM7.25 14.43l-3.5 2c-.08.05-.17.07-.25.07-.17 0-.34-.1-.43-.25-.14-.24-.06-.55.18-.68l3.5-2c.24-.14.55-.06.68.18.14.24.06.55-.18.68zm4.75.07c-.1 0-.2-.03-.27-.08l-8.5-5.5c-.23-.15-.3-.46-.15-.7.15-.22.46-.3.7-.14L12 13.4l8.23-5.32c.23-.15.54-.08.7.15.14.23.07.54-.16.7l-8.5 5.5c-.08.04-.17.07-.27.07zm8.93 1.75c-.1.16-.26.25-.43.25-.08 0-.17-.02-.25-.07l-3.5-2c-.24-.13-.32-.44-.18-.68s.44-.32.68-.18l3.5 2c.24.13.32.44.18.68z" />
-            </svg>
-          </div>
-          E-Mail
-        </div>
-      </a>
-      {/* Sharingbutton LinkedIn */}
-      <a
-        className="resp-sharing-button__link"
-        href={`https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(
-          url
-        )}&title=${encodeURIComponent(title)}&summary=${encodeURIComponent(
-          summary
-        )}&source=${encodeURIComponent(url)}`}
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="LinkedIn"
-      >
-        <div className="resp-sharing-button resp-sharing-button--linkedin resp-sharing-button--medium">
-          <div
-            aria-hidden="true"
-            className="resp-sharing-button__icon resp-sharing-button__icon--solid"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-              <path d="M6.5 21.5h-5v-13h5v13zM4 6.5C2.5 6.5 1.5 5.3 1.5 4s1-2.4 2.5-2.4c1.6 0 2.5 1 2.6 2.5 0 1.4-1 2.5-2.6 2.5zm11.5 6c-1 0-2 1-2 2v7h-5v-13h5V10s1.6-1.5 4-1.5c3 0 5 2.2 5 6.3v6.7h-5v-7c0-1-1-2-2-2z" />
-            </svg>
-          </div>
-          LinkedIn
-        </div>
-      </a>
-      {/* Sharingbutton Reddit */}
-      <a
-        className="resp-sharing-button__link"
-        href={`https://reddit.com/submit/?url=${encodeURIComponent(
-          url
-        )}&resubmit=true&title=${encodeURIComponent(title)}`}
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Reddit"
-      >
-        <div className="resp-sharing-button resp-sharing-button--reddit resp-sharing-button--medium">
-          <div
-            aria-hidden="true"
-            className="resp-sharing-button__icon resp-sharing-button__icon--solid"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-              <path d="M24 11.5c0-1.65-1.35-3-3-3-.96 0-1.86.48-2.42 1.24-1.64-1-3.75-1.64-6.07-1.72.08-1.1.4-3.05 1.52-3.7.72-.4 1.73-.24 3 .5C17.2 6.3 18.46 7.5 20 7.5c1.65 0 3-1.35 3-3s-1.35-3-3-3c-1.38 0-2.54.94-2.88 2.22-1.43-.72-2.64-.8-3.6-.25-1.64.94-1.95 3.47-2 4.55-2.33.08-4.45.7-6.1 1.72C4.86 8.98 3.96 8.5 3 8.5c-1.65 0-3 1.35-3 3 0 1.32.84 2.44 2.05 2.84-.03.22-.05.44-.05.66 0 3.86 4.5 7 10 7s10-3.14 10-7c0-.22-.02-.44-.05-.66 1.2-.4 2.05-1.54 2.05-2.84zM2.3 13.37C1.5 13.07 1 12.35 1 11.5c0-1.1.9-2 2-2 .64 0 1.22.32 1.6.82-1.1.85-1.92 1.9-2.3 3.05zm3.7.13c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9.8 4.8c-1.08.63-2.42.96-3.8.96-1.4 0-2.74-.34-3.8-.95-.24-.13-.32-.44-.2-.68.15-.24.46-.32.7-.18 1.83 1.06 4.76 1.06 6.6 0 .23-.13.53-.05.67.2.14.23.06.54-.18.67zm.2-2.8c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm5.7-2.13c-.38-1.16-1.2-2.2-2.3-3.05.38-.5.97-.82 1.6-.82 1.1 0 2 .9 2 2 0 .84-.53 1.57-1.3 1.87z" />
-            </svg>
-          </div>
-          Reddit
-        </div>
-      </a>
-      {/* Sharingbutton WhatsApp */}
-      <a
-        className="resp-sharing-button__link"
-        href={`whatsapp://send?text=${encodeURIComponent(
-          title
-        )}%20${encodeURIComponent(url)}`}
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="WhatsApp"
-      >
-        <div className="resp-sharing-button resp-sharing-button--whatsapp resp-sharing-button--medium">
-          <div
-            aria-hidden="true"
-            className="resp-sharing-button__icon resp-sharing-button__icon--solid"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-              <path d="M20.1 3.9C17.9 1.7 15 .5 12 .5 5.8.5.7 5.6.7 11.9c0 2 .5 3.9 1.5 5.6L.6 23.4l6-1.6c1.6.9 3.5 1.3 5.4 1.3 6.3 0 11.4-5.1 11.4-11.4-.1-2.8-1.2-5.7-3.3-7.8zM12 21.4c-1.7 0-3.3-.5-4.8-1.3l-.4-.2-3.5 1 1-3.4L4 17c-1-1.5-1.4-3.2-1.4-5.1 0-5.2 4.2-9.4 9.4-9.4 2.5 0 4.9 1 6.7 2.8 1.8 1.8 2.8 4.2 2.8 6.7-.1 5.2-4.3 9.4-9.5 9.4zm5.1-7.1c-.3-.1-1.7-.9-1.9-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.1-.2.2-.3.2-.6.1s-1.2-.5-2.3-1.4c-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6s.3-.3.4-.5c.2-.1.3-.3.4-.5.1-.2 0-.4 0-.5C10 9 9.3 7.6 9 7c-.1-.4-.4-.3-.5-.3h-.6s-.4.1-.7.3c-.3.3-1 1-1 2.4s1 2.8 1.1 3c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.3.2-.7.2-1.2.2-1.3-.1-.3-.3-.4-.6-.5z" />
-            </svg>
-          </div>
-          WhatsApp
-        </div>
-      </a>
-      {/* Sharingbutton VK */}
-      <a
-        className="resp-sharing-button__link"
-        href={`http://vk.com/share.php?title=${encodeURIComponent(
-          title
-        )}&url=${encodeURIComponent(url)}`}
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="VK"
-      >
-        <div className="resp-sharing-button resp-sharing-button--vk resp-sharing-button--medium">
-          <div
-            aria-hidden="true"
-            className="resp-sharing-button__icon resp-sharing-button__icon--solid"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-              <path d="M21.547 7h-3.29a.743.743 0 0 0-.655.392s-1.312 2.416-1.734 3.23C14.734 12.813 14 12.126 14 11.11V7.603A1.104 1.104 0 0 0 12.896 6.5h-2.474a1.982 1.982 0 0 0-1.75.813s1.255-.204 1.255 1.49c0 .42.022 1.626.04 2.64a.73.73 0 0 1-1.272.503 21.54 21.54 0 0 1-2.498-4.543.693.693 0 0 0-.63-.403h-2.99a.508.508 0 0 0-.48.685C3.005 10.175 6.918 18 11.38 18h1.878a.742.742 0 0 0 .742-.742v-1.135a.73.73 0 0 1 1.23-.53l2.247 2.112a1.09 1.09 0 0 0 .746.295h2.953c1.424 0 1.424-.988.647-1.753-.546-.538-2.518-2.617-2.518-2.617a1.02 1.02 0 0 1-.078-1.323c.637-.84 1.68-2.212 2.122-2.8.603-.804 1.697-2.507.197-2.507z" />
-            </svg>
-          </div>
-          VK
-        </div>
-      </a>
+    <div className="flex justify-center">
+      <FacebookShareButton className="mx-3" url={url}>
+        <FacebookIcon size={32} round={true} />
+      </FacebookShareButton>
+      <EmailShareButton className="mx-3" url={url}>
+        <EmailIcon size={32} round={true} />
+      </EmailShareButton>
+      <TwitterShareButton className="mx-3" url={url}>
+        <TwitterIcon size={32} round={true} />
+      </TwitterShareButton>
+      <LinkedinShareButton className="mx-3" url={url}>
+        <LinkedinIcon size={32} round={true} />
+      </LinkedinShareButton>
+      <RedditShareButton className="mx-3" url={url}>
+        <RedditIcon size={32} round={true} />
+      </RedditShareButton>
+      <TelegramShareButton className="mx-3" url={url}>
+        <TelegramIcon size={32} round={true} />
+      </TelegramShareButton>
+      <VKShareButton className="mx-3" url={url}>
+        <VKIcon size={32} round={true} />
+      </VKShareButton>
+      <WhatsappShareButton className="mx-3" url={url}>
+        <WhatsappIcon size={32} round={true} />
+      </WhatsappShareButton>
     </div>
   );
 }
@@ -469,5 +300,5 @@ function Sharing({ url, title, summary }) {
 Sharing.propTypes = {
   url: PropTypes.string,
   title: PropTypes.string,
-  summary: PropTypes.string
+  summary: PropTypes.string,
 };

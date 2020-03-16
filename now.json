@@ -1,4 +1,7 @@
 {
+  "env": {
+    "GOOGLE_APPLICATION_CREDENTIALS": "google-credentials.json"
+  },
   "github": {
     "silent": true,
     "enabled": false

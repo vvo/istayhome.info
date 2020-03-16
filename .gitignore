@@ -24,6 +24,7 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-istayhome-f48a260b6efc.json
+google-credentials.json
 
 .now
+.overmind.sock
