@@ -1,6 +1,8 @@
 {
-  "env": {
-    "GOOGLE_APPLICATION_CREDENTIALS": "google-credentials.json"
+  "build": {
+    "env": {
+      "GOOGLE_APPLICATION_CREDENTIALS": "google-credentials.json"
+    }
   },
   "github": {
     "silent": true,

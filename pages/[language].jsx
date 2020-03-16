@@ -45,7 +45,7 @@ export default function Home({
     router.push(`/${selectedLanguage.value}`);
   };
 
-  const description = markdownTranslation.split("\n")[6];
+  const description = markdownTranslation.split("\n")[8];
   const url = `https://istayhome-info.now.sh/${language}`;
 
   return (
@@ -83,7 +83,7 @@ export default function Home({
         className="flex-1 max-w-xs"
       />
       <Image />
-      <Sharing url={url} />
+      <Sharing url={url} title={title} />
       <Markdown
         options={{
           overrides: {
@@ -124,7 +124,7 @@ export async function getStaticProps({ params }) {
     projectId: "istayhome",
   });
   const language = params.language;
-  const originalTitle = "Social Distancing: This is Not a Snow Day";
+  const originalTitle = "Social Distancing: Why, When & How";
   const originalMarkdownArticleFilePath = resolve("./article.md");
   const markdownTranslationCacheFilepath = resolve(
     `./translations/${language}.md`,
@@ -277,28 +277,39 @@ function Image() {
 function Sharing({ url, title, summary }) {
   return (
     <div className="flex justify-center">
-      <FacebookShareButton className="mx-3" url={url}>
+      <FacebookShareButton className="mx-3" url={url} quote={title}>
         <FacebookIcon size={32} round={true} />
       </FacebookShareButton>
-      <EmailShareButton className="mx-3" url={url}>
+      <EmailShareButton className="mx-3" url={url} subject={title}>
         <EmailIcon size={32} round={true} />
       </EmailShareButton>
-      <TwitterShareButton className="mx-3" url={url}>
+      <TwitterShareButton
+        className="mx-3"
+        url={url}
+        title={title}
+        via={"vvoyer"}
+      >
         <TwitterIcon size={32} round={true} />
       </TwitterShareButton>
-      <LinkedinShareButton className="mx-3" url={url}>
+      <LinkedinShareButton
+        className="mx-3"
+        url={url}
+        title={title}
+        summary={summary}
+        source={"I Stay Home"}
+      >
         <LinkedinIcon size={32} round={true} />
       </LinkedinShareButton>
-      <RedditShareButton className="mx-3" url={url}>
+      <RedditShareButton className="mx-3" url={url} title={title}>
         <RedditIcon size={32} round={true} />
       </RedditShareButton>
-      <TelegramShareButton className="mx-3" url={url}>
+      <TelegramShareButton className="mx-3" url={url} title={title}>
         <TelegramIcon size={32} round={true} />
       </TelegramShareButton>
-      <VKShareButton className="mx-3" url={url}>
+      <VKShareButton className="mx-3" url={url} title={title}>
         <VKIcon size={32} round={true} />
       </VKShareButton>
-      <WhatsappShareButton className="mx-3" url={url}>
+      <WhatsappShareButton className="mx-3" url={url} title={title}>
         <WhatsappIcon size={32} round={true} />
       </WhatsappShareButton>
     </div>
