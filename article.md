@@ -2,17 +2,19 @@
 
 _[Originally published by Ariadne Labs on March 13, 2020](__link0__) | Updated March 14, 2020_
 
+**This article was written by a U.S. person and in such, contains information and references to the U.S. But a lot of its content will also fit any country and culture in the world too**
+
 By Asaf Bitton, MD, MPH
 
 I know there is some confusion about what to do next in the midst of this unprecedented time of a pandemic, school closures, and widespread social disruption. As a primary care physician and public health leader, I have been asked by a lot of people for my opinion, and I will provide it below based on the best information available to me today. These are my personal views, and my take on the necessary steps ahead.
 
-What I can clearly say is that what we do, or don’t do, over the next week will have a massive impact on the local and perhaps national trajectory of coronavirus. We are only about 11 days behind Italy and generally on track to repeat what is unfortunately happening there and throughout much of the rest of Europe very soon.
+What I can clearly say is that what we do, or don’t do, over the next week will have a massive impact on the local and perhaps national trajectory of coronavirus. We are only about 11 days behind Italy (**U.S. data**) and generally on track to repeat what is unfortunately happening there and throughout much of the rest of Europe very soon.
 
 At this point, containment through contact tracing and increased testing is only part of the necessary strategy. We must move to pandemic mitigation through widespread, uncomfortable, and comprehensive **social distancing**. That means not only shutting down schools, work (as much as possible), group gatherings, and public events, but also making daily choices to stay away from each other as much as possible to Flatten The Curve below.
 
 __###__
 
-Our health system will not be able to cope with the projected numbers of people who will need acute care should we not muster the fortitude and will to socially distance each other starting now. On a regular day, we have about 45,000 staffed ICU beds nationally, which can be ramped up in a crisis to about 95,000. Even moderate projections suggest that if current infectious trends hold, our capacity (locally and nationally) may be overwhelmed as early as mid-late April. **Thus, the only strategies that can get us off this concerning trajectory are those that enable us to work together as a community to maintain public health by _staying apart_.**
+Our health system will not be able to cope with the projected numbers of people who will need acute care should we not muster the fortitude and will to socially distance each other starting now. On a regular day, we have about 45,000 staffed ICU beds nationally, which can be ramped up in a crisis to about 95,000 (**U.S. data**). Even moderate projections suggest that if current infectious trends hold, our capacity (locally and nationally) may be overwhelmed as early as mid-late April. **Thus, the only strategies that can get us off this concerning trajectory are those that enable us to work together as a community to maintain public health by staying apart.**
 
 The wisdom, and necessity, of this more aggressive, early, and extreme form of social distancing can be found [here](__link1__). I would urge you to take a minute to walk through the interactive graphs — they will drive home the point about what we need to do now to avoid a worse crisis later. Historical lessons and experiences of countries worldwide have shown us that taking these actions early can have a [dramatic impact](__link2__) on the magnitude of the outbreak. So what does this enhanced form of social distancing mean on a daily basis, when schools are cancelled?
 

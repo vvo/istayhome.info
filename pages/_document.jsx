@@ -30,7 +30,7 @@ class MyDocument extends Document {
           />
           <link rel="manifest" href="/site.webmanifest" />
           <link
-            href="https://fonts.googleapis.com/css2?family=Roboto&family=Playfair+Display&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display&display=swap"
             rel="stylesheet"
           />
           <link

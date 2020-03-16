@@ -2,17 +2,19 @@
 
 _ [Ursprünglich veröffentlicht von Ariadne Labs am 13. März 2020] (__ link0__) | Aktualisiert am 14. März 2020_
 
+** Dieser Artikel wurde von einer US-Person verfasst und enthält Informationen und Verweise auf die USA. Ein Großteil seines Inhalts passt jedoch auch in jedes Land und jede Kultur der Welt **
+
 Von Asaf Bitton, MD, MPH
 
 Ich weiß, dass es in dieser beispiellosen Zeit einer Pandemie, Schulschließungen und weit verbreiteten sozialen Störungen einige Verwirrung darüber gibt, was als nächstes zu tun ist. Als Hausarzt und Leiter der öffentlichen Gesundheit wurde ich von vielen Menschen nach meiner Meinung gefragt, und ich werde sie im Folgenden auf der Grundlage der besten Informationen bereitstellen, die mir heute zur Verfügung stehen. Dies sind meine persönlichen Ansichten und meine Übernahme der notwendigen Schritte.
 
-Was ich klar sagen kann, ist, dass das, was wir in der nächsten Woche tun oder nicht tun, einen massiven Einfluss auf die lokale und möglicherweise nationale Entwicklung des Coronavirus haben wird. Wir sind nur etwa 11 Tage hinter Italien und im Allgemeinen auf dem richtigen Weg, um zu wiederholen, was dort und in weiten Teilen Europas leider sehr bald passiert.
+Was ich klar sagen kann, ist, dass das, was wir in der nächsten Woche tun oder nicht tun, einen massiven Einfluss auf die lokale und möglicherweise nationale Entwicklung des Coronavirus haben wird. Wir sind nur etwa 11 Tage hinter Italien (** US-Daten **) und im Allgemeinen auf dem richtigen Weg, um zu wiederholen, was dort und in weiten Teilen Europas leider sehr bald passiert.
 
 Zu diesem Zeitpunkt ist die Eindämmung durch Kontaktverfolgung und verstärkte Tests nur ein Teil der erforderlichen Strategie. Wir müssen durch weit verbreitete, unangenehme und umfassende ** soziale Distanzierung ** zur Pandemieminderung übergehen. Das bedeutet nicht nur, Schulen, Arbeit (so viel wie möglich), Gruppentreffen und öffentliche Veranstaltungen zu schließen, sondern auch tägliche Entscheidungen zu treffen, um so weit wie möglich voneinander entfernt zu bleiben, um die Kurve unten zu verflachen.
 
 __ ### __
 
-Unser Gesundheitssystem wird nicht in der Lage sein, mit der prognostizierten Anzahl von Menschen fertig zu werden, die eine Akutversorgung benötigen, wenn wir nicht ab sofort die Kraft und den Willen aufbringen, uns sozial zu distanzieren. An einem normalen Tag haben wir landesweit etwa 45.000 Betten auf Intensivstationen, die in einer Krise auf etwa 95.000 hochgefahren werden können. Selbst moderate Prognosen deuten darauf hin, dass unsere Kapazität (lokal und national) bereits Mitte bis Ende April überlastet sein könnte, wenn die aktuellen infektiösen Trends anhalten. ** Die einzigen Strategien, die uns in Bezug auf die Flugbahn davon abbringen können, sind diejenigen, die es uns ermöglichen, als Gemeinschaft zusammenzuarbeiten, um die öffentliche Gesundheit zu erhalten, indem wir auseinander bleiben. **
+Unser Gesundheitssystem wird nicht in der Lage sein, mit der prognostizierten Anzahl von Menschen fertig zu werden, die eine Akutversorgung benötigen, wenn wir nicht ab sofort die Kraft und den Willen aufbringen, uns sozial zu distanzieren. An einem normalen Tag haben wir landesweit etwa 45.000 Betten auf Intensivstationen, die in einer Krise auf etwa 95.000 hochgefahren werden können (** US-Daten **). Selbst moderate Prognosen deuten darauf hin, dass unsere Kapazität (lokal und national) bereits Mitte bis Ende April überlastet sein könnte, wenn die aktuellen infektiösen Trends anhalten. ** Die einzigen Strategien, die uns in Bezug auf die Flugbahn davon abbringen können, sind diejenigen, die es uns ermöglichen, als Gemeinschaft zusammenzuarbeiten, um die öffentliche Gesundheit zu erhalten, indem wir getrennt bleiben. **
 
 Die Weisheit und Notwendigkeit dieser aggressiveren, frühen und extremeren Form der sozialen Distanzierung finden Sie [hier] (__ link1__). Ich möchte Sie dringend bitten, sich eine Minute Zeit zu nehmen, um durch die interaktiven Grafiken zu gehen - sie werden den Punkt nach Hause bringen, was wir jetzt tun müssen, um später eine schlimmere Krise zu vermeiden. Historische Lehren und Erfahrungen von Ländern weltweit haben gezeigt, dass frühzeitiges Ergreifen dieser Maßnahmen einen [dramatischen Einfluss] (__ link2__) auf das Ausmaß des Ausbruchs haben kann. Was bedeutet diese verstärkte Form der sozialen Distanzierung täglich, wenn Schulen abgesagt werden?
 
@@ -59,7 +61,3 @@ Wir können nicht warten.
 Asaf Bitton, MD, MPH, ist der Geschäftsführer von [Ariadne Labs] (https://www.ariadnelabs.org) in Boston, MA.
 
 _ [Laden Sie ein druckfähiges PDF dieses Artikels herunter] (__ link9 __) _
-
-- Aktualisiert am 14. März 2020, um eine Grafik zu entfernen und eingebettete Links zu ändern.
-
-
