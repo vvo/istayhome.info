@@ -11,6 +11,7 @@ class MyDocument extends Document {
     return (
       <Html lang={`${this.props.language}-x-mtfrom-en`}>
         <Head>
+          <meta charSet="utf-8" />
           <link
             rel="apple-touch-icon"
             sizes="180x180"

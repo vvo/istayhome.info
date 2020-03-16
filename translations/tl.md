@@ -1,0 +1,73 @@
+# Social Distancing: Bakit, Kailan & Paano
+
+_[Orihinal na nai-publish sa pamamagitan ng Ariadne Labs noong Marso 13, 2020 sa](https://www.ariadnelabs.org/resources/articles/news/social-distancing-this-is-not-a-snow-day) ilalim ng pamagat na "Social Distancing: Hindi ito araw ng niyebe" | Na-update Marso 14, 2020_
+
+**Ang artikulong ito ay isinulat ng isang tao sa US at sa ganoon, naglalaman ng impormasyon at sanggunian sa US Ngunit ang maraming nilalaman nito ay magkasya din sa anumang bansa at kultura sa mundo**
+
+Ni Asaf Bitton, MD, MPH
+
+Alam kong may ilang pagkalito tungkol sa kung ano ang susunod na gagawin sa gitna ng walang uliran na oras ng isang pandemya, pagsasara ng paaralan, at malawakang pagkagambala sa lipunan. Bilang isang manggagamot sa pangunahing pangangalaga at pinuno sa kalusugan ng publiko, tinanong ako ng maraming tao para sa aking opinyon, at ibibigay ko ito sa ibaba batay sa pinakamahusay na impormasyon na magagamit sa akin ngayon. Ito ang aking mga personal na pananaw, at ang aking ginagawa sa mga kinakailangang hakbang sa unahan.
+
+Ang malinaw kong masasabi ay ang ginagawa natin, o hindi ginagawa, sa susunod na linggo ay magkakaroon ng malaking epekto sa lokal at marahil pambansang tilapon ng coronavirus. Kami ay halos 11 araw lamang sa likod ng Italya ( **data ng US** ) at sa pangkalahatan ay sinusubaybayan upang ulitin kung ano ang sa kasamaang palad nangyayari doon at sa buong bahagi ng Europa sa lalong madaling panahon.
+
+Sa puntong ito, ang pagkakaloob sa pamamagitan ng pagsubaybay sa contact at pagtaas ng pagsubok ay bahagi lamang ng kinakailangang diskarte. Dapat tayong lumipat sa pandemya na pag-iwas sa pamamagitan ng laganap, hindi komportable, at komprehensibong **paglalakbay sa lipunan** . Nangangahulugan ito hindi lamang pag-shut down ang mga paaralan, trabaho (hangga't maaari), pagtitipon ng grupo, at pampublikong mga kaganapan, ngunit gumagawa din ng pang-araw-araw na mga pagpipilian na lumayo sa bawat isa hangga't maaari sa Flatten The curve sa ibaba.
+
+<center><img src="/graph.jpeg" alt="Pinagmulan: https://www.vox.com/science-and-health/2020/3/6/21161234/coronavirus-covid-19-science-outbreak-ends-endemic-vaccine"><p><em>Pinagmulan: <a href="https://www.vox.com/science-and-health/2020/3/6/21161234/coronavirus-covid-19-science-outbreak-ends-endemic-vaccine">vox.com</a></em></p></center>
+
+Ang sistemang pangkalusugan ay hindi makayanan ang inaasahang bilang ng mga tao na kakailanganin ng matinding pangangalaga kung hindi natin masusukat ang lakas at makakapasyal sa isa't isa simula ngayon. Sa isang regular na araw, mayroon kaming tungkol sa 45,000 mga kawani ng ICU kama sa buong bansa, na maaaring ma-ramp up sa isang krisis sa halos 95,000 ( **data ng US** ). Kahit na ang katamtamang mga pag-iilaw ay nagmumungkahi na kung ang kasalukuyang mga nakakahawang mga uso ay humahawak, ang aming kapasidad (lokal at pambansa) ay maaaring mapuspos ng maaga pa noong kalagitnaan ng Abril. **Sa gayon, ang mga estratehiya lamang na makakapagtanggal sa atin tungkol sa trajectory ay ang mga nagbibigay daan sa amin upang magtulungan bilang isang pamayanan upang mapanatili ang kalusugan ng publiko sa pamamagitan ng pananatiling magkahiwalay.**
+
+Ang karunungan, at pangangailangan, ng mas agresibo, maaga, at matinding porma ng pagliparan sa lipunan ay matatagpuan [dito](https://www.nytimes.com/interactive/2020/03/13/opinion/coronavirus-trump-response.html?action=click&module=Opinion&pgtype=Homepage--) . Hinihiling ko sa iyo na maglaan ng isang minuto upang maglakad sa mga interactive na mga graph - aakayin nila sa bahay ang punto tungkol sa kung ano ang kailangan nating gawin ngayon upang maiwasan ang isang mas masahol na krisis sa paglaon. Ang mga aralin sa kasaysayan at karanasan ng mga bansa sa buong mundo ay nagpakita sa amin na ang pagsasagawa ng mga pagkilos nang maaga ay maaaring magkaroon ng isang [kapansin](https://bmcpublichealth.biomedcentral.com/articles/10.1186/s12889-018-5446-1) - [pansing epekto](https://bmcpublichealth.biomedcentral.com/articles/10.1186/s12889-018-5446-1) sa kalakhan ng pagsiklab. Kaya ano ang ibig sabihin ng pinahusay na form na ito ng panlipunang paglalakbay sa araw-araw, kung kanselahin ang mga paaralan?
+
+Narito ang ilang mga hakbang na maaari mong simulan ang pagkuha ngayon upang mapanatiling ligtas ang iyong pamilya at gawin ang iyong bahagi upang maiwasan ang lumalala na krisis:
+
+## 1\. Kailangan nating itulak ang ating lokal, estado, at pambansang pinuno upang isara ang LAHAT ng mga paaralan at pampublikong puwang at kanselahin ang lahat ng mga kaganapan at pampublikong pagtitipon _ngayon_ .
+
+Ang isang lokal, bayan sa pamamagitan ng tugon ng bayan ay hindi magkakaroon ng sapat na kinakailangang epekto. Kailangan namin ng isang pambuong-bayan, buong bansa na diskarte sa mga pagsubok na ito. [Makipag-ugnay sa iyong kinatawan](https://www.house.gov/representatives/find-your-representative) at sa iyong gobernador upang himukin sila na magpatupad ng mga pagsara sa statewide. Sa ngayon, anim na estado ang nagawa na. Ang iyong estado ay dapat na isa sa kanila. Hinikayat din ang mga pinuno na dagdagan ang pondo para sa paghahanda sa emerhensiya at gawin ang pagpapalawak ng kapasidad ng pagsubok sa coronavirus ng isang agaran at pinakamahalagang prayoridad. Kailangan din namin ang mga mambabatas upang gumawa ng mas mahusay na bayad na bayad sa sakit at mga benepisyo sa kawalan ng trabaho upang matulungan ang mga tao na gumawa ng tamang tawag upang manatili sa bahay ngayon.
+
+## 2\. Walang mga playdate ng bata, mga partido, mga natutulog, o mga pamilya / kaibigan na bumibisita sa bawat bahay at apartment ng bawat isa.
+
+Ito ay matindi dahil ito ay. Sinusubukan naming lumikha ng distansya sa pagitan ng mga yunit ng pamilya at sa pagitan ng mga indibidwal. Maaaring hindi partikular na hindi komportable para sa mga pamilya na may maliliit na bata, mga bata na may mga kakayahan sa pagkakaiba o mga hamon, at para sa mga bata na simpleng gustong maglaro sa kanilang mga kaibigan. Ngunit kahit na pipiliin mo lamang ang isang kaibigan na magkaroon ng higit, lumilikha ka ng mga bagong link at posibilidad para sa uri ng paghahatid na sinusubukan mong pigilan ang lahat ng aming pagsasaayos sa paaralan / trabaho / pampublikong kaganapan. Ang mga sintomas ng coronavirus ay tumatagal ng apat hanggang limang araw upang maipakita ang kanilang sarili. Ang isang taong tumingin nang mabuti ay maaaring magpadala ng virus. Ang pagbabahagi ng pagkain ay partikular na mapanganib - Talagang hindi ko inirerekumenda na gawin ito ng mga tao sa labas ng kanilang pamilya.
+
+Nagsagawa na kami ng matinding mga hakbang sa lipunan upang matugunan ang malubhang sakit na ito - huwag nating aktibong pipiliin ang aming mga pagsisikap sa pamamagitan ng pagkakaroon ng mataas na antas ng pakikipag-ugnayan sa lipunan sa mga bahay ng mga tao sa halip na sa mga paaralan o lugar ng trabaho. Muli - ang karunungan ng maaga at agresibo na paglalakbay sa lipunan ay maaari itong pawiin ang curve sa itaas, bigyan ang aming sistema ng kalusugan ng isang pagkakataon na hindi malampasan, at sa huli ay maaaring mabawasan ang haba at kailangan para sa mas mahabang panahon ng matinding paglalakbay sa lipunan (tingnan kung ano ang mayroon lumipat sa Italya at Wuhan). Kailangan nating lahat gawin ang ating bahagi sa mga oras na ito, kahit na nangangahulugang ilang kakulangan sa ginhawa para sa isang habang.
+
+## 3\. Alagaan ang iyong sarili at ang iyong pamilya, ngunit mapanatili ang layo sa lipunan.
+
+Mag-ehersisyo, maglakad / tumatakbo sa labas, at manatiling konektado sa pamamagitan ng telepono, video, at iba pang social media. Ngunit kapag lumabas ka sa labas, gawin ang iyong makakaya upang mapanatili ang hindi bababa sa anim na talampakan sa pagitan mo at ng mga hindi miyembro ng pamilya. Kung mayroon kang mga bata, subukang huwag gumamit ng mga pampublikong pasilidad tulad ng mga istruktura ng palaruan, dahil ang coronavirus ay maaaring mabuhay sa plastik at metal hanggang sa siyam na araw, at ang mga istrukturang ito ay hindi regular na nalinis.
+
+Ang pagpunta sa labas ay magiging mahalaga sa mga kakaibang oras na ito, at ang panahon ay nagpapabuti. Pumunta sa labas araw-araw kung magagawa mo, ngunit manatiling pisikal na malayo sa mga tao sa labas ng iyong pamilya o kasama sa silid. Kung mayroon kang mga bata, subukang maglaro ng isang laro ng soccer ng pamilya sa halip na ang iyong mga anak ay makipaglaro sa ibang mga bata, dahil ang palakasan ay madalas na nangangahulugang direktang pisikal na pakikipag-ugnay sa iba. At kahit na nais naming bisitahin ang mga matatanda sa aming pamayanan nang personal, hindi ko bisitahin ang mga tahanan ng pag-aalaga o iba pang mga lugar kung saan naninirahan ang malaking bilang ng mga matatanda, dahil ang mga ito ay nasa pinakamataas na panganib para sa mga komplikasyon at pagkamatay mula sa coronavirus.
+
+Ang paglalakbay sa lipunan ay maaaring tumagal ng isang toll (pagkatapos ng lahat, ang karamihan sa atin ay mga nilalang panlipunan). Nag- [aalok ang CDC ng mga tip at mapagkukunan](https://www.cdc.gov/coronavirus/2019-ncov/about/coping.html) upang mabawasan ang pasanin na ito, at ang iba pang mga [mapagkukunan ay nag-aalok ng mga diskarte upang makayanan](https://www.verywellmind.com/managing-coronavirus-anxiety-4798909) ang idinagdag na stress sa oras na ito.
+
+Kailangan nating maghanap ng mga kahaliling paraan upang mabawasan ang paghihiwalay ng lipunan sa loob ng aming mga komunidad sa pamamagitan ng virtual na paraan sa halip na mga pagbisita sa personal na tao.
+
+## 4\. Bawasan ang dalas ng pagpunta sa mga tindahan, restawran, at mga tindahan ng kape sa oras na ito.
+
+Siyempre ang mga paglalakbay sa grocery store ay kinakailangan, ngunit subukang limitahan ang mga ito at pumunta sa mga oras na hindi gaanong abala. Isaalang-alang ang paghingi ng mga tindahan ng grocery upang mai-pila ang mga tao sa pintuan upang limitahan ang bilang ng mga tao sa loob ng isang tindahan sa anumang oras. Tandaan na hugasan nang lubusan ang iyong mga kamay bago at pagkatapos ng iyong paglalakbay. At iwanan ang mga medikal na maskara at guwantes para sa mga medikal na propesyonal - kailangan namin silang alagaan ang mga may sakit. Panatilihin ang distansya mula sa iba habang namimili - at tandaan na ang pag-iimbak ng panustos ay negatibong nakakaapekto sa iba kaya bumili ng kailangan mo at mag-iwan ng kaunti para sa iba. Ang mga take-out na pagkain at pagkain ay mas maganda kaysa sa paggawa ng pagkain sa bahay na ibinigay ang mga link sa pagitan ng mga taong naghahanda ng pagkain, nagdadala ng pagkain, at sa iyo. Mahirap malaman kung magkano ang panganib na iyon, ngunit tiyak na mas mataas ito kaysa sa paggawa nito sa bahay. Ngunit maaari mong at dapat ipagpatuloy ang pagsuporta sa iyong lokal na maliliit na negosyo (lalo na ang mga restawran at iba pang mga nagtitingi) sa oras na ito ng mahirap na oras sa pamamagitan ng pagbili ng mga sertipiko ng regalo sa online na maaari mong magamit sa ibang pagkakataon.
+
+## 5\. Kung ikaw ay may sakit, ihiwalay ang iyong sarili, manatili sa bahay, at makipag-ugnay sa isang medikal na propesyonal.
+
+Kung ikaw ay may sakit, dapat mong subukang ihiwalay ang iyong sarili sa nalalabi sa iyong pamilya sa loob ng iyong tirahan hangga't maaari. Kung mayroon kang mga katanungan tungkol sa kung kwalipikado ka o dapat kumuha ng coronavirus test, maaari mong tawagan ang iyong pangunahing koponan sa pangangalaga at / o isaalang-alang ang pagtawag sa Massachusetts Department of Public Health sa 617.983.6800 (o [departamento ng kalusugan ng](https://www.cdc.gov/coronavirus/2019-ncov/downloads/Phone-Numbers_State-and-Local-Health-Departments.pdf) iyong [estado](https://www.cdc.gov/coronavirus/2019-ncov/downloads/Phone-Numbers_State-and-Local-Health-Departments.pdf) kung ikaw ay nasa labas ng Massachusetts ). Huwag lamang maglakad sa isang klinikal na ambisyon - tumawag muna upang maaari silang mabigyan ng pinakamahusay na payo - na maaaring pumunta sa isang [sentro ng pagsubok sa pamamagitan ng pagsubok](https://www.theverge.com/2020/3/11/21174880/coronavirus-testing-drive-thru-colorado-connecticut-washington) o isang virtual na pagbisita sa video o telepono. Siyempre, kung ito ay isang tawag na pang-emergency 911.
+
+Napagtanto ko na maraming nabuo sa mga mungkahi na ito, at na kumakatawan sa isang tunay na pasanin para sa maraming mga indibidwal, pamilya, negosyo, at komunidad. Mahirap ang paglalakbay sa lipunan at maaaring negatibong nakakaapekto sa maraming tao, lalo na sa mga nahaharap sa kahinaan sa ating lipunan. Kinikilala ko na may hindi pagkakapareho sa istruktura at panlipunan na itinayo sa loob at sa paligid ng mga rekomendasyon sa paglalakbay sa lipunan. Maaari at dapat tayong gumawa ng mga hakbang upang palakasin ang tugon ng aming komunidad sa mga taong nahiharap sa kawalan ng kapanatagan, karahasan sa tahanan, at mga hamon sa pabahay, kasama ang maraming iba pang mga kapansanan sa lipunan.
+
+Napagtanto ko din na hindi lahat ay makakaya ang lahat. Ngunit kailangan nating subukan ang ating lubos na makakaya bilang isang pamayanan, simula ngayon. Ang pagpapahusay ng panlipunan na paglalakbay, kahit na sa isang araw, ay maaaring [gumawa ng malaking pagkakaiba](https://www.ncbi.nlm.nih.gov/pubmed/19400970/) .
+
+Mayroon kaming isang preemptive opportunity na makatipid ng buhay sa pamamagitan ng mga aksyon na ginagawa namin ngayon na hindi kami magkakaroon ng ilang linggo. Ito ay isang pampublikong kahalagahan sa kalusugan. Responsibilidad din natin bilang isang pamayanan na kumilos habang mayroon pa rin tayong pagpipilian at habang ang ating mga aksyon ay maaaring magkaroon ng pinakamalaking epekto.
+
+Hindi kami makapaghintay.
+
+![](/signature.png)
+
+_Si Asaf Bitton, MD, MPH, ay ehekutibong direktor ng [Ariadne Labs](https://www.ariadnelabs.org) sa Boston, MA._
+
+_[Mag-download ng isang mai-print na PDF ng artikulong ito](https://www.ariadnelabs.org/wp-content/uploads/sites/2/2020/03/Social-Distancing-This-is-Not-a-Snow-Day-Bitton.pdf)_
+
+---
+
+Nais mong i-update ang isang pagsasalin? Basahin at mag-ambag sa [source code](https://github.com/vvo/istayhome.info) . Guhit mula sa mga [opendoodles](https://generator.opendoodles.com/)
+
+Bakit ang website na ito? Una kong nais na ibahagi ang orihinal na artikulo sa aking mga kapitbahay sa Pransya. Ngunit sa pagkakaalam na hindi sila nagbasa ng Ingles, at nais kong mag-ambag sa pagsisikap sa pagliparan sa lipunan, ginawa ko ang website na ito.
+
+Ang website na ito ay gumagamit ng Google Translate upang magamit ang nilalaman sa 109+ wika.
+
+Katulad na website: [https://staythefuckhome.com/](https://staythefuckhome.com/) .

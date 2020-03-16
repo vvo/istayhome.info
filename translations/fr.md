@@ -12,7 +12,7 @@ Ce que je peux dire clairement, c'est que ce que nous faisons ou ne faisons pas 
 
 À ce stade, le confinement par la recherche des contacts et l'augmentation des tests n'est qu'une partie de la stratégie nécessaire. Nous devons passer à l'atténuation de la pandémie par une **distanciation sociale** généralisée, inconfortable et globale. Cela signifie non seulement fermer les écoles, travailler (autant que possible), les réunions de groupe et les événements publics, mais aussi faire des choix quotidiens pour rester le plus loin possible les uns des autres pour aplatir la courbe ci-dessous.
 
-<center><img src="/graph.jpeg" alt="Source: https://www.vox.com/science-and-health/2020/3/6/21161234/coronavirus-covid-19-science-outbreak-ends-endemic-vaccine"><p><em>Source: <a href="https://www.vox.com/science-and-health/2020/3/6/21161234/coronavirus-covid-19-science-outbreak-ends-endemic-vaccine">https://www.vox.com/science-and-health/2020/3/6/21161234/coronavirus-covid-19-science-outbreak-ends-endemic-vaccine</a></em></p></center>
+<center><img src="/graph.jpeg" alt="Source: https://www.vox.com/science-and-health/2020/3/6/21161234/coronavirus-covid-19-science-outbreak-ends-endemic-vaccine"><p><em>Source: <a href="https://www.vox.com/science-and-health/2020/3/6/21161234/coronavirus-covid-19-science-outbreak-ends-endemic-vaccine">vox.com</a></em></p></center>
 
 Notre système de santé ne sera pas en mesure de faire face au nombre prévu de personnes qui auront besoin de soins de courte durée si nous ne rassemblons pas nos forces et si nous voulons nous distancier socialement dès maintenant. Chaque jour, nous avons environ 45 000 lits de soins intensifs au niveau national, qui peuvent être augmentés en cas de crise à environ 95 000 ( **données américaines** ). Même des projections modérées suggèrent que si les tendances infectieuses actuelles se maintiennent, notre capacité (locale et nationale) pourrait être dépassée dès la mi-fin avril. **Ainsi, les seules stratégies qui peuvent nous sortir de cette trajectoire concernant sont celles qui nous permettent de travailler ensemble en tant que communauté pour maintenir la santé publique en restant séparés.**
 
@@ -34,7 +34,7 @@ Nous avons déjà pris des mesures sociales extrêmes pour lutter contre cette m
 
 Faites de l'exercice, promenez-vous / courez dehors et restez connecté grâce au téléphone, à la vidéo et à d'autres médias sociaux. Mais lorsque vous sortez, faites de votre mieux pour maintenir au moins six pieds entre vous et les membres de votre famille. Si vous avez des enfants, essayez de ne pas utiliser les installations publiques comme les structures de jeux, car le coronavirus peut vivre sur du plastique et du métal pendant neuf jours au maximum, et ces structures ne sont pas nettoyées régulièrement.
 
-Sortir sera important en ces temps étranges et le temps s'améliore. Sortez tous les jours si vous le pouvez, mais éloignez-vous physiquement des personnes extérieures à votre famille ou des colocataires. Si vous avez des enfants, essayez de jouer à un match de football familial au lieu de faire jouer vos enfants avec d'autres enfants, car le sport signifie souvent un contact physique direct avec les autres. Et même si nous souhaitons visiter les aînés de notre communauté en personne, je ne visiterais pas les maisons de soins infirmiers ou d'autres zones où résident un grand nombre de personnes âgées, car elles sont les plus à risque de complications et de mortalité par coronavirus.
+Sortir sera important en ces temps étranges et le temps s'améliore. Sortez tous les jours si vous le pouvez, mais éloignez-vous physiquement des personnes extérieures à votre famille ou des colocataires. Si vous avez des enfants, essayez de jouer à un match de football familial au lieu de faire jouer vos enfants avec d'autres enfants, car le sport signifie souvent un contact physique direct avec les autres. Et bien que nous puissions visiter les aînés de notre communauté en personne, je ne visiterais pas les maisons de soins infirmiers ou d'autres régions où résident un grand nombre de personnes âgées, car elles sont les plus à risque de complications et de mortalité par coronavirus.
 
 La distanciation sociale peut avoir des conséquences (après tout, la plupart d'entre nous sont des créatures sociales). Le [CDC offre des conseils et des ressources](https://www.cdc.gov/coronavirus/2019-ncov/about/coping.html) pour réduire ce fardeau, et d'autres [ressources proposent des stratégies pour faire face](https://www.verywellmind.com/managing-coronavirus-anxiety-4798909) au stress supplémentaire pendant cette période.
 
@@ -42,7 +42,7 @@ Nous devons trouver d'autres moyens de réduire l'isolement social au sein de no
 
 ## 4\. Réduisez la fréquence des visites dans les magasins, restaurants et cafés pour le moment.
 
-Bien sûr, des déplacements à l'épicerie seront nécessaires, mais essayez de les limiter et allez aux moments où ils sont moins occupés. Pensez à demander aux épiceries de faire la queue aux gens à la porte afin de limiter le nombre de personnes à l'intérieur d'un magasin à un moment donné. N'oubliez pas de bien vous laver les mains avant et après votre voyage. Et laissez les masques et gants médicaux aux professionnels de la santé - nous en avons besoin pour soigner les malades. Gardez la distance des autres lors de vos achats - et n'oubliez pas que la thésaurisation de fournitures a un impact négatif sur les autres, alors achetez ce dont vous avez besoin et laissez-en pour tout le monde. Les repas à emporter et les aliments sont plus risqués que de préparer des aliments à la maison étant donné les liens entre les personnes qui préparent les aliments, les transportent et vous. Il est difficile de savoir quel est le risque, mais il est certainement plus élevé que de le faire à la maison. Mais vous pouvez et devez continuer à soutenir vos petites entreprises locales (en particulier les restaurants et autres détaillants) pendant cette période difficile en achetant des chèques-cadeaux en ligne que vous pourrez utiliser plus tard.
+Bien sûr, des déplacements à l'épicerie seront nécessaires, mais essayez de les limiter et allez aux moments où ils sont moins occupés. Pensez à demander aux épiceries de faire la queue aux gens à la porte afin de limiter le nombre de personnes à l'intérieur d'un magasin à un moment donné. N'oubliez pas de bien vous laver les mains avant et après votre voyage. Et laissez les masques et gants médicaux aux professionnels de la santé - nous en avons besoin pour soigner les malades. Gardez la distance des autres lors de vos achats - et n'oubliez pas que la thésaurisation de fournitures a un impact négatif sur les autres, alors achetez ce dont vous avez besoin et laissez-en pour tout le monde. Les repas à emporter et les aliments sont plus risqués que de préparer des aliments à la maison étant donné les liens entre les personnes qui préparent les aliments, les transportent et vous. Il est difficile de savoir quel est le risque, mais il est certainement plus élevé que de le faire à la maison. Mais vous pouvez et devez continuer à soutenir vos petites entreprises locales (en particulier les restaurants et autres détaillants) pendant cette période difficile en achetant des certificats-cadeaux en ligne que vous pourrez utiliser plus tard.
 
 ## 5\. Si vous êtes malade, isolez-vous, restez à la maison et contactez un professionnel de la santé.
 
@@ -56,7 +56,7 @@ Nous avons une opportunité préemptive de sauver des vies grâce aux actions qu
 
 Nous ne pouvons pas attendre.
 
-![](https://cdn-images-1.medium.com/max/2000/1*_7aR_ESGHkhpBb_nSVd1Eg.png)
+![](/signature.png)
 
 _Asaf Bitton, MD, MPH, est le directeur exécutif d' [Ariadne Labs](https://www.ariadnelabs.org) à Boston, MA._
 
@@ -67,5 +67,7 @@ _[Téléchargez un PDF imprimable de cet article](https://www.ariadnelabs.org/wp
 Vous souhaitez mettre à jour une traduction? Lisez et contribuez au [code source](https://github.com/vvo/istayhome.info) . Illustration de [opendoodles](https://generator.opendoodles.com/)
 
 Pourquoi ce site web? J'ai d'abord voulu partager l'article original avec mes voisins en France. Mais sachant qu'ils ne lisaient pas l'anglais et que je voulais contribuer à l'effort de distanciation sociale, j'ai réalisé ce site.
+
+Ce site Web utilise Google Translate pour rendre le contenu disponible dans plus de 109 langues.
 
 Site Web similaire: [https://staythefuckhome.com/](https://staythefuckhome.com/) .

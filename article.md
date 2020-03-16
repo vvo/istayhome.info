@@ -15,7 +15,7 @@ At this point, containment through contact tracing and increased testing is only
 <center>
 <img src="/graph.jpeg" alt="Source: https://www.vox.com/science-and-health/2020/3/6/21161234/coronavirus-covid-19-science-outbreak-ends-endemic-vaccine" />
 
-_Source: [https://www.vox.com/science-and-health/2020/3/6/21161234/coronavirus-covid-19-science-outbreak-ends-endemic-vaccine](https://www.vox.com/science-and-health/2020/3/6/21161234/coronavirus-covid-19-science-outbreak-ends-endemic-vaccine)_
+_Source: [vox.com](https://www.vox.com/science-and-health/2020/3/6/21161234/coronavirus-covid-19-science-outbreak-ends-endemic-vaccine)_
 </center>
 
 Our health system will not be able to cope with the projected numbers of people who will need acute care should we not muster the fortitude and will to socially distance each other starting now. On a regular day, we have about 45,000 staffed ICU beds nationally, which can be ramped up in a crisis to about 95,000 (**U.S. data**). Even moderate projections suggest that if current infectious trends hold, our capacity (locally and nationally) may be overwhelmed as early as mid-late April. **Thus, the only strategies that can get us off this concerning trajectory are those that enable us to work together as a community to maintain public health by staying apart.**
@@ -60,7 +60,7 @@ We have a preemptive opportunity to save lives through the actions we take right
 
 We cannot wait.
 
-![](https://cdn-images-1.medium.com/max/2000/1*_7aR_ESGHkhpBb_nSVd1Eg.png)
+![](/signature.png)
 
 _Asaf Bitton, MD, MPH, is the executive director of [Ariadne Labs](https://www.ariadnelabs.org) in Boston, MA._
 
@@ -71,5 +71,7 @@ _[Download a printable PDF of this article](https://www.ariadnelabs.org/wp-conte
 Want to update a translation? Read and contribute to the [source code](https://github.com/vvo/istayhome.info). Illustration from [opendoodles](https://generator.opendoodles.com/)
 
 Why this website? I initially wanted to share the original article to my neighbors in France. But knowing they did not read English, and that I wanted to contribute to the social distancing effort, I made this website.
+
+This website uses Google Translate to make the content available to 109+ languages.
 
 Similar website: https://staythefuckhome.com/.

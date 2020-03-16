@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import Head from "next/head";
 import Select from "react-select";
 import { useRouter } from "next/router";
@@ -48,6 +48,26 @@ export default function Home({
   const description = markdownTranslation.split("\n")[8];
   const url = `https://istayhome-info.now.sh/${language}`;
 
+  const selectRef = useRef(null);
+  const [menuIsOpen, setMenuIsOpen] = useState(false);
+  const wrapperRef = useRef(null);
+
+  function handleClickOutside(event) {
+    if (wrapperRef.current && !wrapperRef.current.contains(event.target)) {
+      selectRef.current.blur();
+      setMenuIsOpen(false);
+    }
+  }
+
+  useEffect(() => {
+    // Bind the event listener
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      // Unbind the event listener on clean up
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  });
+
   return (
     <>
       <Head>
@@ -75,13 +95,29 @@ export default function Home({
           content="https://istayhome-info.now.sh/social.png"
         />
       </Head>
-      <Select
-        instanceId={1}
-        value={currentLanguage}
-        onChange={handleChange}
-        options={options}
-        className="flex-1 max-w-xs"
-      />
+      <div
+        className="flex justify-start cursor-pointer"
+        ref={wrapperRef}
+        onClick={() => {
+          setMenuIsOpen(!menuIsOpen);
+          if (!menuIsOpen) {
+            selectRef.current.focus();
+          } else {
+            selectRef.current.blur();
+          }
+        }}
+      >
+        <span className="select-none text-2xl self-center">🌐</span>
+        <Select
+          ref={selectRef}
+          menuIsOpen={menuIsOpen}
+          instanceId={1}
+          value={currentLanguage}
+          onChange={handleChange}
+          options={options}
+          className="ml-2 flex-1 max-w-xs"
+        />
+      </div>
       <Image />
       <Sharing url={url} title={title} />
       <Markdown
@@ -233,12 +269,18 @@ async function fileExists(filePath) {
 }
 
 export async function getStaticPaths() {
+  const { Translate } = require("@google-cloud/translate").v2;
+  const translate = new Translate({
+    projectId: "istayhome",
+  });
+  const [languages] = await translate.getLanguages();
+
   return {
-    paths: [
-      { params: { language: "fr" } },
-      { params: { language: "de" } },
-      { params: { language: "en" } },
-    ],
+    paths: languages.map(({ code }) => {
+      return {
+        params: { language: code },
+      };
+    }),
     fallback: false,
   };
 }
@@ -277,14 +319,14 @@ function Image() {
 function Sharing({ url, title, summary }) {
   return (
     <div className="flex justify-center">
-      <FacebookShareButton className="mx-3" url={url} quote={title}>
+      <FacebookShareButton className="mx-1" url={url} quote={title}>
         <FacebookIcon size={32} round={true} />
       </FacebookShareButton>
-      <EmailShareButton className="mx-3" url={url} subject={title}>
+      <EmailShareButton className="mx-1" url={url} subject={title}>
         <EmailIcon size={32} round={true} />
       </EmailShareButton>
       <TwitterShareButton
-        className="mx-3"
+        className="mx-1"
         url={url}
         title={title}
         via={"vvoyer"}
@@ -292,7 +334,7 @@ function Sharing({ url, title, summary }) {
         <TwitterIcon size={32} round={true} />
       </TwitterShareButton>
       <LinkedinShareButton
-        className="mx-3"
+        className="mx-1"
         url={url}
         title={title}
         summary={summary}
@@ -300,16 +342,16 @@ function Sharing({ url, title, summary }) {
       >
         <LinkedinIcon size={32} round={true} />
       </LinkedinShareButton>
-      <RedditShareButton className="mx-3" url={url} title={title}>
+      <RedditShareButton className="mx-1" url={url} title={title}>
         <RedditIcon size={32} round={true} />
       </RedditShareButton>
-      <TelegramShareButton className="mx-3" url={url} title={title}>
+      <TelegramShareButton className="mx-1" url={url} title={title}>
         <TelegramIcon size={32} round={true} />
       </TelegramShareButton>
-      <VKShareButton className="mx-3" url={url} title={title}>
+      <VKShareButton className="mx-1" url={url} title={title}>
         <VKIcon size={32} round={true} />
       </VKShareButton>
-      <WhatsappShareButton className="mx-3" url={url} title={title}>
+      <WhatsappShareButton className="mx-1" url={url} title={title}>
         <WhatsappIcon size={32} round={true} />
       </WhatsappShareButton>
     </div>
@@ -321,3 +363,5 @@ Sharing.propTypes = {
   title: PropTypes.string,
   summary: PropTypes.string,
 };
+
+function closeMenuWhenOutside({ ref, selectRef, setMenuIsOpen }) {}

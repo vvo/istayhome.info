@@ -12,7 +12,7 @@ Was ich klar sagen kann, ist, dass das, was wir in der nächsten Woche tun oder 
 
 Zu diesem Zeitpunkt ist die Eindämmung durch Kontaktverfolgung und verstärkte Tests nur ein Teil der erforderlichen Strategie. Wir müssen durch weit verbreitete, unangenehme und umfassende **soziale Distanzierung** zur Pandemieminderung **übergehen** . Das bedeutet nicht nur, Schulen, Arbeit (so viel wie möglich), Gruppentreffen und öffentliche Veranstaltungen zu schließen, sondern auch tägliche Entscheidungen zu treffen, um so weit wie möglich voneinander entfernt zu bleiben, um die Kurve unten zu verflachen.
 
-<center><img src="/graph.jpeg" alt="Quelle: https://www.vox.com/science-and-health/2020/3/6/21161234/coronavirus-covid-19-science-outbreak-ends-endemic-vaccine"><p><em>Quelle: <a href="https://www.vox.com/science-and-health/2020/3/6/21161234/coronavirus-covid-19-science-outbreak-ends-endemic-vaccine">https://www.vox.com/science-and-health/2020/3/6/21161234/coronavirus-covid-19-science-outbreak-ends-endemic-vaccine</a></em></p></center>
+<center><img src="/graph.jpeg" alt="Quelle: https://www.vox.com/science-and-health/2020/3/6/21161234/coronavirus-covid-19-science-outbreak-ends-endemic-vaccine"><p><em>Quelle: <a href="https://www.vox.com/science-and-health/2020/3/6/21161234/coronavirus-covid-19-science-outbreak-ends-endemic-vaccine">vox.com</a></em></p></center>
 
 Unser Gesundheitssystem wird nicht in der Lage sein, mit der prognostizierten Anzahl von Menschen fertig zu werden, die eine Akutversorgung benötigen, wenn wir nicht ab sofort die Kraft und den Willen aufbringen, uns sozial zu distanzieren. An einem normalen Tag haben wir landesweit etwa 45.000 Betten auf Intensivstationen, die in einer Krise auf etwa 95.000 erhöht werden können ( **US-Daten** ). Selbst moderate Prognosen deuten darauf hin, dass unsere Kapazität (lokal und national) bereits Mitte bis Ende April überlastet sein könnte, wenn die aktuellen infektiösen Trends anhalten. **Die einzigen Strategien, die uns davon abhalten können, sind diejenigen, die es uns ermöglichen, als Gemeinschaft zusammenzuarbeiten, um die öffentliche Gesundheit zu erhalten, indem wir getrennt bleiben.**
 
@@ -56,7 +56,7 @@ Wir haben die präventive Gelegenheit, durch die Maßnahmen, die wir derzeit erg
 
 Wir können nicht warten.
 
-![](https://cdn-images-1.medium.com/max/2000/1*_7aR_ESGHkhpBb_nSVd1Eg.png)
+![](/signature.png)
 
 _Asaf Bitton, MD, MPH, ist der Geschäftsführer von [Ariadne Labs](https://www.ariadnelabs.org) in Boston, MA._
 
@@ -67,5 +67,7 @@ _[Laden Sie ein druckfähiges PDF dieses Artikels herunter](https://www.ariadnel
 Möchten Sie eine Übersetzung aktualisieren? Lesen Sie den [Quellcode](https://github.com/vvo/istayhome.info) und tragen Sie dazu bei. Illustration von [opendoodles](https://generator.opendoodles.com/)
 
 Warum diese Website? Ich wollte den Originalartikel zunächst meinen Nachbarn in Frankreich mitteilen. Aber da ich wusste, dass sie kein Englisch lesen und dass ich zu den sozialen Distanzierungsbemühungen beitragen wollte, habe ich diese Website erstellt.
+
+Diese Website verwendet Google Translate, um den Inhalt für mehr als 109 Sprachen verfügbar zu machen.
 
 Ähnliche Website: [https://staythefuckhome.com/](https://staythefuckhome.com/) .
