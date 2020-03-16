@@ -1,7 +1,4 @@
 {
-  "env": {
-    "GOOGLE_CLOUD_API_KEY": "@istayhome-cloud-api-key"
-  },
   "github": {
     "silent": true,
     "enabled": false

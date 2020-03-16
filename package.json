@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "build": "next build",
+    "build": "GOOGLE_APPLICATION_CREDENTIALS='istayhome-f48a260b6efc.json' next build",
     "dev": "next dev",
     "format": "prettier --write '**/*.*'",
     "lint": "prettier --check '**/*.*' && eslint . --ext js,jsx",

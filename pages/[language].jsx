@@ -96,8 +96,7 @@ export async function getStaticProps({ params }) {
 
   const { Translate } = require("@google-cloud/translate").v2;
   const translate = new Translate({
-    projectId: "istayhome",
-    key: process.env.GOOGLE_CLOUD_API_KEY
+    projectId: "istayhome"
   });
   const language = params.language;
   const originalTitle = "Social Distancing: This is Not a Snow Day";
