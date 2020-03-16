@@ -6,7 +6,7 @@ export default function Home() {
   const router = useRouter();
 
   useEffect(() => {
-    router.push(`/${navigator.language}`);
+    router.push(`/${navigator.language.slice(0, 2)}`);
   });
 
   return (
