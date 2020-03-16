@@ -4855,7 +4855,7 @@ loose-envify@^1.0.0, loose-envify@^1.1.0, loose-envify@^1.4.0:
   dependencies:
     js-tokens "^3.0.0 || ^4.0.0"
 
-lru-cache-fs@^2.0.1:
+lru-cache-fs@2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/lru-cache-fs/-/lru-cache-fs-2.0.1.tgz#9506366daf9c3edbbe0f4cf98a6222234d8daec0"
   integrity sha512-O/f262s36nuk4Y18ijTfc0mQbPmJvf09AnvjrSNmIMrE9PkK9Zd2JRNe0Kit1Js7z/IpCh21RLvauzEnbeYVDQ==
@@ -4909,7 +4909,7 @@ map-visit@^1.0.0:
   dependencies:
     object-visit "^1.0.0"
 
-markdown-to-jsx@^6.11.0:
+markdown-to-jsx@6.11.0:
   version "6.11.0"
   resolved "https://registry.yarnpkg.com/markdown-to-jsx/-/markdown-to-jsx-6.11.0.tgz#a2e3f2bc781c3402d8bb0f8e0a12a186474623b0"
   integrity sha512-RH7LCJQ4RFmPqVeZEesKaO1biRzB/k4utoofmTCp3Eiw6D7qfvK8fzZq/2bjEJAtVkfPrM5SMt5APGf2rnaKMg==
@@ -4917,7 +4917,7 @@ markdown-to-jsx@^6.11.0:
     prop-types "^15.6.2"
     unquote "^1.1.0"
 
-marked@^0.8.0:
+marked@0.8.0:
   version "0.8.0"
   resolved "https://registry.yarnpkg.com/marked/-/marked-0.8.0.tgz#ec5c0c9b93878dc52dd54be8d0e524097bd81a99"
   integrity sha512-MyUe+T/Pw4TZufHkzAfDj6HarCBWia2y27/bhuYkTaiUnfDYFnCP3KUN+9oM7Wi6JA2rymtVYbQu3spE0GCmxQ==
@@ -6509,7 +6509,7 @@ react-select@3.0.8:
     react-input-autosize "^2.2.2"
     react-transition-group "^2.2.1"
 
-react-share@^4.1.0:
+react-share@4.1.0:
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/react-share/-/react-share-4.1.0.tgz#45cbed5ddcbb24504143bcfc0e9b8a729ce274e0"
   integrity sha512-4/XqVBC+hreniU08zkzAkOGC3FPdJhcLzt1QCdybsZPd5ieUS++iChEEptvNoksiJ5NxbI2VRoDY9ovLAGl7GQ==
@@ -7700,7 +7700,7 @@ tunnel-agent@^0.6.0:
   dependencies:
     safe-buffer "^5.0.1"
 
-turndown@^6.0.0:
+turndown@6.0.0:
   version "6.0.0"
   resolved "https://registry.yarnpkg.com/turndown/-/turndown-6.0.0.tgz#c083d6109a9366be1b84b86b20af09140ea4b413"
   integrity sha512-UVJBhSyRHCpNKtQ00mNWlYUM/i+tcipkb++F0PrOpt0L7EhNd0AX9mWEpL2dRFBu7LWXMp4HgAMA4OeKKnN7og==
