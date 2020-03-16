@@ -48,25 +48,25 @@ export default function Home({
   const description = markdownTranslation.split("\n")[8];
   const url = `https://istayhome-info.now.sh/${language}`;
 
-  const selectRef = useRef(null);
-  const [menuIsOpen, setMenuIsOpen] = useState(false);
-  const wrapperRef = useRef(null);
+  // const selectRef = useRef(null);
+  // const [menuIsOpen, setMenuIsOpen] = useState(false);
+  // const wrapperRef = useRef(null);
 
-  function handleClickOutside(event) {
-    if (wrapperRef.current && !wrapperRef.current.contains(event.target)) {
-      selectRef.current.blur();
-      setMenuIsOpen(false);
-    }
-  }
+  // function handleClickOutside(event) {
+  //   if (wrapperRef.current && !wrapperRef.current.contains(event.target)) {
+  //     selectRef.current.blur();
+  //     setMenuIsOpen(false);
+  //   }
+  // }
 
-  useEffect(() => {
-    // Bind the event listener
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => {
-      // Unbind the event listener on clean up
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  });
+  // useEffect(() => {
+  //   // Bind the event listener
+  //   document.addEventListener("mousedown", handleClickOutside);
+  //   return () => {
+  //     // Unbind the event listener on clean up
+  //     document.removeEventListener("mousedown", handleClickOutside);
+  //   };
+  // });
 
   return (
     <>
@@ -94,20 +94,20 @@ export default function Home({
       </Head>
       <div
         className="flex justify-start cursor-pointer"
-        ref={wrapperRef}
-        onClick={() => {
-          setMenuIsOpen(!menuIsOpen);
-          if (!menuIsOpen) {
-            selectRef.current.focus();
-          } else {
-            selectRef.current.blur();
-          }
-        }}
+        // ref={wrapperRef}
+        // onClick={() => {
+        //   setMenuIsOpen(!menuIsOpen);
+        //   if (!menuIsOpen) {
+        //     selectRef.current.focus();
+        //   } else {
+        //     selectRef.current.blur();
+        //   }
+        // }}
       >
         <span className="select-none text-2xl self-center">🌐</span>
         <Select
-          ref={selectRef}
-          menuIsOpen={menuIsOpen}
+          // ref={selectRef}
+          // menuIsOpen={menuIsOpen}
           instanceId={1}
           value={currentLanguage}
           onChange={handleChange}
