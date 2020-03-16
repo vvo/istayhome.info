@@ -87,7 +87,11 @@ export default function Home({
       <Markdown
         options={{
           overrides: {
-            h1: { props: { className: "font-serif text-5xl mb-10" } },
+            h1: {
+              props: {
+                className: "font-serif text-5xl mb-10 mt-5 text-center",
+              },
+            },
             h2: { props: { className: "font-serif text-3xl my-6" } },
             p: { props: { className: "font-sans text-lg my-5" } },
             a: {
@@ -108,6 +112,7 @@ export default function Home({
 export async function getStaticProps({ params }) {
   const Cache = require("lru-cache-fs");
   const { resolve } = require("path");
+  const { readFile } = require("fs").promises;
 
   const cache = new Cache({
     max: 1000,
@@ -141,12 +146,15 @@ export async function getStaticProps({ params }) {
   cache.set("languages", [languages]);
   cache.fsDump();
 
-  const markdownTranslation = await getOrComputeAndCacheMarkdownTranslation({
-    language,
-    markdownTranslationCacheFilepath,
-    originalMarkdownArticleFilePath,
-    translate,
-  });
+  const markdownTranslation =
+    language === "en"
+      ? await readFile(originalMarkdownArticleFilePath, "utf-8")
+      : await getOrComputeAndCacheMarkdownTranslation({
+          language,
+          markdownTranslationCacheFilepath,
+          originalMarkdownArticleFilePath,
+          translate,
+        });
 
   return {
     props: {
