@@ -77,10 +77,7 @@ export default function Home({
         <meta property="og:type" content="website" />
         <meta property="og:url" content={url} />
         <meta property="og:title" content={title} />
-        <meta
-          property="og:description"
-          content="With Meta Tags you can edit and experiment with your content then preview how your webpage will look on Google, Facebook, Twitter and more!"
-        />
+        <meta property="og:description" content={description} />
         <meta
           property="og:image"
           content="https://istayhome-info.now.sh/social.png"
