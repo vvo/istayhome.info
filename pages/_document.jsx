@@ -40,7 +40,7 @@ class MyDocument extends Document {
           />
         </Head>
         <body className="bg-yellow-100">
-          <main className="bg-white container mx-auto max-w-5xl px-10 py-6">
+          <main className="bg-white container mx-auto max-w-5xl px-4 sm:px-10 py-6">
             <Main />
             <NextScript />
             <style jsx global>{`
