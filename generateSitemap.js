@@ -3,7 +3,7 @@ import { createWriteStream } from "fs";
 import { resolve } from "path";
 import { SitemapStream } from "sitemap";
 
-const baseUrl = "https://istayhome-info.next.sh/";
+const baseUrl = "https://istayhome-info.now.sh/";
 const cache = new Cache({
   max: 1000,
   cacheName: "istayhome.info", // filename ref to be used
