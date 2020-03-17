@@ -9,7 +9,9 @@ class MyDocument extends Document {
 
   render() {
     return (
-      <Html lang={`${this.props.language}-x-mtfrom-en`}>
+      <Html
+        lang={this.props.language ? `${this.props.language}-x-mtfrom-en` : "en"}
+      >
         <Head>
           <meta charSet="utf-8" />
           <link
