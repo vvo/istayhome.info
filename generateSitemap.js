@@ -12,7 +12,7 @@ const [languages] = cache.get("languages");
 const sitemapStream = new SitemapStream({
   hostname: baseUrl,
 });
-sitemapStream.pipe(createWriteStream(resolve("sitemap.xml")));
+sitemapStream.pipe(createWriteStream(resolve("public/sitemap.xml")));
 
 sitemapStream.write({ url: baseUrl });
 
