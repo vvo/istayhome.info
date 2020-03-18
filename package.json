@@ -53,7 +53,7 @@
     "@google-cloud/translate": "5.3.0",
     "lru-cache-fs": "2.0.1",
     "markdown-to-jsx": "6.11.0",
-    "marked": "0.8.0",
+    "marked": "0.8.1",
     "next": "9.3.0",
     "react": "16.13.0",
     "react-dom": "16.13.0",
