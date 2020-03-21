@@ -5,7 +5,7 @@
   "scripts": {
     "build": "next build",
     "dev": "next dev",
-    "format": "prettier --write '**/*.*'",
+    "format": "prettier --write '**/*.*' && eslint . --fix",
     "generateSitemap": "babel-node --presets @babel/preset-env generateSitemap.js",
     "lint": "prettier --check '**/*.*' && eslint . --ext js,jsx",
     "start": "next start",
@@ -48,6 +48,7 @@
     }
   },
   "dependencies": {
+    "@babel/core": "7.9.0",
     "@babel/preset-env": "7.9.0",
     "@fullhuman/postcss-purgecss": "2.1.0",
     "@google-cloud/translate": "5.3.0",
