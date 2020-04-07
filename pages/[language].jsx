@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState } from "react";
 import Head from "next/head";
 import Select from "react-select";
 import { useRouter } from "next/router";
@@ -360,5 +360,3 @@ Sharing.propTypes = {
   title: PropTypes.string,
   summary: PropTypes.string,
 };
-
-function closeMenuWhenOutside({ ref, selectRef, setMenuIsOpen }) {}
