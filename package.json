@@ -74,7 +74,7 @@
     "prettier": "2.0.4",
     "prettier-plugin-packagejson": "2.2.0",
     "prop-types": "15.7.2",
-    "sitemap": "6.1.0"
+    "sitemap": "6.1.1"
   },
   "engines": {
     "node": "12.16.2",
